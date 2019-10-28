@@ -1,0 +1,31 @@
+.menu {
+  margin-bottom: 10px;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  color: @grey;
+  font-weight: 700;
+  font-size: 14px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition();
+  }
+}
