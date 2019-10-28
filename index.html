@@ -6,6 +6,8 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>VNGroup</title>
   <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -16,11 +18,11 @@
           <p class="header__time">Пн - Пт 09:00 - 20:00<br>Сб 10:00 - 15:00</p>
         </div>
         <div class="header__block">
-          <a href="tel:+78005503513" class="header__phone">8 800 550 35 13</a>
+          <a href="tel:+78005503513" class="phone header__phone">8 800 550 35 13</a>
         </div>
         <div class="header__block">
-          <a href="#" class="header__call">Заказать звонок</a>
-          <a href="mailto:info@vngroup.su" class="header__mail">info@vngroup.su</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="call header__call">Заказать звонок</a>
+          <a href="mailto:info@vngroup.su" class="mail header__mail">info@vngroup.su</a>
         </div>
         <div class="header__block">
           <a href="#" class="header__login">Войти</a>
@@ -215,6 +217,125 @@
       </div>
     </div>
     
+    <section class="tabs wrapper" id="tabs">
+      <ul class="tabs__btns">
+        <li class="tabs__btn"><a href="#tabs-1">Хит</a></li>
+        <li class="tabs__btn"><a href="#tabs-2">Акция</a></li>
+        <li class="tabs__btn"><a href="#tabs-3">Новинка</a></li>
+      </ul>
+      <div class="tabs__field" id="tabs-1">
+        <div class="swiper-container tabs__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide tabs__slide">
+              <a href="#" class="tabs__pic">
+                <img src="img/images/img-1.jpg" alt="Хит">
+              </a>
+            </div>
+            <div class="swiper-slide tabs__slide">
+              <a href="#" class="tabs__pic">
+                <img src="img/images/img-1.jpg" alt="Хит">
+              </a>
+            </div>
+            <div class="swiper-slide tabs__slide">
+              <a href="#" class="tabs__pic">
+                <img src="img/images/img-1.jpg" alt="Хит">
+              </a>
+            </div>
+            <div class="swiper-slide tabs__slide">
+              <a href="#" class="tabs__pic">
+                <img src="img/images/img-1.jpg" alt="Хит">
+              </a>
+            </div>
+            <div class="swiper-slide tabs__slide">
+              <a href="#" class="tabs__pic">
+                <img src="img/images/img-1.jpg" alt="Хит">
+              </a>
+            </div>
+            <div class="swiper-slide tabs__slide">
+              <a href="#" class="tabs__pic">
+                <img src="img/images/img-1.jpg" alt="Хит">
+              </a>
+            </div>
+            <div class="swiper-slide tabs__slide">
+              <a href="#" class="tabs__pic">
+                <img src="img/images/img-1.jpg" alt="Хит">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev tabs__prev"></div>
+          <div class="swiper-button-next tabs__next"></div>
+        </div>
+      </div>
+      <div class="tabs__field" id="tabs-2">
+        Акция
+      </div>
+      <div class="tabs__field" id="tabs-3">
+        Новинка
+      </div>
+    </section>
+    
+    <section class="tabs wrapper" id="tabs2">
+      <ul class="tabs__names">
+        <li class="tabs__name"><a href="#tabs2-1">Новости</a></li>
+        <li class="tabs__name"><a href="#tabs2-2">Идеи</a></li>
+        <li class="tabs__name"><a href="#tabs2-3">Статьи</a></li>
+      </ul>
+      <div class="tabs__field" id="tabs2-1">
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">
+              <div class="tabs__wrap">
+                <figure class="tabs__img">
+                  <img src="img/images/img-1.jpg" alt="Новости">
+                </figure>
+                <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
+              </div>
+              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">
+              <div class="tabs__wrap">
+                <figure class="tabs__img">
+                  <img src="img/images/img-1.jpg" alt="Новости">
+                </figure>
+                <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
+              </div>
+              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">
+              <div class="tabs__wrap">
+                <figure class="tabs__img">
+                  <img src="img/images/img-1.jpg" alt="Новости">
+                </figure>
+                <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
+              </div>
+              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">
+              <div class="tabs__wrap">
+                <figure class="tabs__img">
+                  <img src="img/images/img-1.jpg" alt="Новости">
+                </figure>
+                <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
+              </div>
+              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tabs__field" id="tabs2-2">
+        Идеи
+      </div>
+      <div class="tabs__field" id="tabs2-3">
+        Статьи
+      </div>
+    </section>
+    
     <section class="about">
       <div class="wrapper">
         <div class="about__wrap">
@@ -234,7 +355,46 @@
     <section class="partners">
       <div class="wrapper">
         <p class="title title--center">Наши партнеры</p>
-        
+        <div class="swiper-container partners__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_gastrorag.jpg" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_wilmax-angliya.png" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_tudor.png" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_pintinox-.jpg" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_bormioli-luigi.jpg" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_peugeot.png" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_bergano.jpg" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_itpizza.jpg" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_paderno.jpg" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_bormioli-luigi.jpg" alt="Наши партнеры"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/images/logo_valera.png" alt="Наши партнеры"></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev partners__prev">&lsaquo;</div>
+          <div class="swiper-button-next partners__next">&rsaquo;</div>
+        </div>
       </div>
     </section>
     
@@ -317,31 +477,77 @@
         </div>
       </div>
       <div class="footer__block">
-        <p class="footer__title"></p>
+        <p class="footer__title">Информация</p>
         <ul class="footer__menu">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Заказ и оплата</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Идеи</a></li>
+          <li><a href="#">Статьи</a></li>
+          <li><a href="#">Бренды</a></li>
+          <li><a href="#">Карта сайта</a></li>
         </ul>
       </div>
       <div class="footer__block">
-        <p class="footer__title"></p>
-        
+        <p class="footer__title">Размещение запросов и заказов</p>
+        <a href="tel:+78005503513" class="phone footer__phone">8 800 550 35 13</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="call footer__call">Заказать звонок</a>
+        <a href="mailto:info@vngroup.ru" class="mail footer__mail">info@vngroup.ru</a>
+        <a href="#" class="social-link">Facebook</a>
       </div>
       <div class="footer__block">
-        <p class="footer__title"></p>
-        <address></address>
-        <address></address>
+        <p class="footer__title">Контакты</p>
+        <address>119285, г. Москва ул. Мосфильмовская 20/2</address>
+        <address>Представительство в Приволжском ФО<br>443080, г. Самара<br>ул. Карла Маркса 192</address>
       </div>
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+  
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+    $(function() {
+      $("#tabs2").tabs();
+    });
+  </script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.partners__slider', {
+      navigation: {
+        nextEl: '.partners__next',
+        prevEl: '.partners__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 7,
+      spaceBetween: 20,
+    });
+    
+    var mySwiper = new Swiper ('.tabs__slider', {
+      navigation: {
+        nextEl: '.tabs__next',
+        prevEl: '.tabs__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 5,
+      spaceBetween: 20,
+    });
+  </script>
 </body>
 </html>
