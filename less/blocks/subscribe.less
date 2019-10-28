@@ -1,0 +1,68 @@
+.subscribe {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background-color: @cyan;
+}
+
+.subscribe__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe__title {
+  margin: 0;
+  position: relative;
+  padding-left: 35px;
+  font-weight: 700;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icons/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.subscribe__input {
+  display: block;
+  width: 300px;
+  height: 30px;
+  margin-right: 20px;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgba(255,255,255,0);
+}
+
+.subscribe__btn {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #fff;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @cyan;
+    .transition();
+  }
+}
