@@ -226,47 +226,34 @@
         <li class="tabs__btn"><a href="#tabs-3">Новинка</a></li>
       </ul>
       <div class="tabs__field" id="tabs-1">
-        <div class="swiper-container tabs__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide tabs__slide">
-              <a href="#" class="tabs__pic">
-                <img src="img/images/img-1.jpg" alt="Хит">
-              </a>
-            </div>
-            <div class="swiper-slide tabs__slide">
-              <a href="#" class="tabs__pic">
-                <img src="img/images/img-1.jpg" alt="Хит">
-              </a>
-            </div>
-            <div class="swiper-slide tabs__slide">
-              <a href="#" class="tabs__pic">
-                <img src="img/images/img-1.jpg" alt="Хит">
-              </a>
-            </div>
-            <div class="swiper-slide tabs__slide">
-              <a href="#" class="tabs__pic">
-                <img src="img/images/img-1.jpg" alt="Хит">
-              </a>
-            </div>
-            <div class="swiper-slide tabs__slide">
-              <a href="#" class="tabs__pic">
-                <img src="img/images/img-1.jpg" alt="Хит">
-              </a>
-            </div>
-            <div class="swiper-slide tabs__slide">
-              <a href="#" class="tabs__pic">
-                <img src="img/images/img-1.jpg" alt="Хит">
-              </a>
-            </div>
-            <div class="swiper-slide tabs__slide">
-              <a href="#" class="tabs__pic">
-                <img src="img/images/img-1.jpg" alt="Хит">
-              </a>
-            </div>
-          </div>
-          <div class="swiper-button-prev tabs__prev">&larr;</div>
-          <div class="swiper-button-next tabs__next">&rarr;</div>
-        </div>
+        <ul class="tabs__slider">
+          <li class="tabs__slide">
+            <a href="#" class="tabs__pic">
+              <img src="img/images/img-1.jpg" alt="Хит">
+            </a>
+          </li>
+          <li class="tabs__slide">
+            <a href="#" class="tabs__pic">
+              <img src="img/images/img-1.jpg" alt="Хит">
+            </a>
+          </li>
+          <li class="tabs__slide">
+            <a href="#" class="tabs__pic">
+              <img src="img/images/img-1.jpg" alt="Хит">
+            </a>
+          </li>
+          <li class="tabs__slide">
+            <a href="#" class="tabs__pic">
+              <img src="img/images/img-1.jpg" alt="Хит">
+            </a>
+          </li>
+          <li class="tabs__slide">
+            <a href="#" class="tabs__pic">
+              <img src="img/images/img-1.jpg" alt="Хит">
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="tabs__next">&rarr;</a>
       </div>
       <div class="tabs__field" id="tabs-2">
         Акция
@@ -292,7 +279,10 @@
                 </figure>
                 <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
               </div>
-              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+              <div class="tabs__info">
+                <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+                <span class="tabs__next">&rarr;</span>
+              </div>
             </a>
           </li>
           <li class="tabs__item">
@@ -303,7 +293,10 @@
                 </figure>
                 <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
               </div>
-              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+              <div class="tabs__info">
+                <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+                <span class="tabs__next">&rarr;</span>
+              </div>
             </a>
           </li>
           <li class="tabs__item">
@@ -314,7 +307,10 @@
                 </figure>
                 <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
               </div>
-              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+              <div class="tabs__info">
+                <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+                <span class="tabs__next">&rarr;</span>
+              </div>
             </a>
           </li>
           <li class="tabs__item">
@@ -325,7 +321,10 @@
                 </figure>
                 <p class="tabs__title">TUDOR. Традиционный английский фарфор</p>
               </div>
-              <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+              <div class="tabs__info">
+                <p>Гончарная лавка по изготовлению фарфора ручной работы TUDOR была основана в 1828 году в Англии, благодаря своему наследию</p>
+                <span class="tabs__next">&rarr;</span>
+              </div>
             </a>
           </li>
         </ul>
@@ -343,7 +342,7 @@
         <div class="about__wrap">
           <aside class="about__aside">
             <img src="img/images/img-1.jpg" alt="О компании">
-            <a href="#" class="btn sidebar__btn">Оставить отзыв о сайте</a>
+            <a href="#" class="btn about__btn">Оставить отзыв о сайте</a>
           </aside>
           <div class="about__info">
             <p class="title">О компании</p>
@@ -537,17 +536,6 @@
       preventClicks: false,
       preventClicksPropagation: false,
       slidesPerView: 7,
-      spaceBetween: 20,
-    });
-    
-    var mySwiper = new Swiper ('.tabs__slider', {
-      navigation: {
-        nextEl: '.tabs__next',
-        prevEl: '.tabs__prev',
-      },
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 5,
       spaceBetween: 20,
     });
   </script>
