@@ -78,8 +78,8 @@
     <div class="wrapper wrapper--columns">
       <aside class="sidebar">
         <nav class="sidebar__menu">
-          <button type="button" class="sidebar__title">Каталог товаров</button>
-          <ul class="sidebar__list">
+          <button type="button" class="sidebar__title sidebar__title--opened">Каталог товаров</button>
+          <ul class="sidebar__list sidebar__list--opened">
             <li class="sidebar__item">
               <a href="#" class="sidebar__link">Оснащение гостиниц</a>
               <ul class="sidebar__sublist">
@@ -132,7 +132,7 @@
           <button type="button" class="sidebar__title">Ресторанный консалтинг</button>
           <ul class="sidebar__list">
             <li class="sidebar__item">
-              <a href="#" class="sidebar__link">Разработка концепции</a>
+              <a href="#" class="sidebar__link sidebar__link--nodrop">Разработка концепции</a>
             </li>
           </ul>
         </nav>
@@ -549,6 +549,20 @@
       preventClicksPropagation: false,
       slidesPerView: 5,
       spaceBetween: 20,
+    });
+  </script>
+  
+  <!-- Sidebar -->
+  <script>
+    $('.sidebar__title').click(function() {
+      $(this).toggleClass('sidebar__title--opened');
+      $(this).next().slideToggle();
+    });
+    
+    $('.sidebar__link').click(function(e) {
+      e.preventDefault();
+      $(this).next().slideToggle();
+      $(this).toggleClass('sidebar__link--opened');
     });
   </script>
 </body>
