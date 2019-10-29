@@ -1382,3 +1382,157 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.footer {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 13px;
+  background-color: #2f455d;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer__bottom a {
+  display: block;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+.footer__bottom a:hover,
+.footer__bottom a:active {
+  text-decoration: none;
+}
+.footer__title {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.footer__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__menu a:hover,
+.footer__menu a:active {
+  text-decoration: underline;
+}
+.footer__phone {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 0;
+  font-size: 16px;
+}
+.footer__phone::before {
+  left: -40px;
+  border-color: #fff;
+  background-image: url(../img/icons/phone-white.svg);
+}
+.footer__phone:hover,
+.footer__phone:active {
+  color: #43b5c7;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social-link {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icons/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.social-link:hover,
+.social-link:active {
+  color: #43b5c7;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__block address {
+  margin-bottom: 20px;
+}
+.modal {
+  width: 400px;
+  max-width: 100%;
+}
+.modal__comment {
+  font-size: 13px;
+  text-align: center;
+}
+.modal__comment a {
+  text-decoration: underline;
+}
+.modal__comment a:hover,
+.modal__comment a:active {
+  text-decoration: none;
+}
+.form {
+  margin-top: 30px;
+}
+.form__message,
+.form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #8d9396;
+}
+.form__message {
+  padding: 10px;
+  height: 100px;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+.form__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+.form__checkbox {
+  display: none;
+}
+.form__label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8d9396;
+  border-radius: 3px;
+}
+.form__label::after {
+  display: none;
+  content: "\2713";
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  font-size: 20px;
+  color: #2f455d;
+}
+.form__checkbox:checked + .form__label::after {
+  display: block;
+}

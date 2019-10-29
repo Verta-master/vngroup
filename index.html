@@ -470,47 +470,60 @@
   
   <footer class="footer">
     <div class="wrapper">
-      <div class="footer__block">
-        <div class="logo">
-          <img src="img/images/VNGroup.png" alt="VNGroup">
+      <div class="footer__wrap">
+        <div class="footer__block">
+          <div class="logo">
+            <img src="img/images/VNGroup.png" alt="VNGroup">
+          </div>
         </div>
-        <div class="footer__bottom">
-          <a href="#">Политика конфиденциальности</a>
-          <span>(c) 2016 - 2019</span>
+        <div class="footer__block">
+          <p class="footer__title">Информация</p>
+          <ul class="footer__menu">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Заказ и оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Идеи</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <p class="footer__title">Размещение<br>запросов и заказов</p>
+          <a href="tel:+78005503513" class="phone footer__phone">8 800 550 35 13</a>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="call footer__call">Заказать звонок</a>
+          <a href="mailto:info@vngroup.ru" class="mail footer__mail">info@vngroup.ru</a>
+          <a href="#" class="social-link">Facebook</a>
+        </div>
+        <div class="footer__block">
+          <p class="footer__title">Контакты</p>
+          <address>119285, г. Москва<br>ул. Мосфильмовская 20/2</address>
+          <address>Представительство в Приволжском ФО<br>443080, г. Самара<br>ул. Карла Маркса 192</address>
         </div>
       </div>
-      <div class="footer__block">
-        <p class="footer__title">Информация</p>
-        <ul class="footer__menu">
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Заказ и оплата</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Идеи</a></li>
-          <li><a href="#">Статьи</a></li>
-          <li><a href="#">Бренды</a></li>
-          <li><a href="#">Карта сайта</a></li>
-        </ul>
-      </div>
-      <div class="footer__block">
-        <p class="footer__title">Размещение запросов и заказов</p>
-        <a href="tel:+78005503513" class="phone footer__phone">8 800 550 35 13</a>
-        <a data-fancybox="" data-src="#call" href="javascript:;" class="call footer__call">Заказать звонок</a>
-        <a href="mailto:info@vngroup.ru" class="mail footer__mail">info@vngroup.ru</a>
-        <a href="#" class="social-link">Facebook</a>
-      </div>
-      <div class="footer__block">
-        <p class="footer__title">Контакты</p>
-        <address>119285, г. Москва ул. Мосфильмовская 20/2</address>
-        <address>Представительство в Приволжском ФО<br>443080, г. Самара<br>ул. Карла Маркса 192</address>
+      <div class="footer__bottom">
+        <a href="#">Политика конфиденциальности</a>
+        <span>(c) 2016 - 2019</span>
       </div>
     </div>
   </footer>
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="title title--center">ОСТАВИТЬ ОТЗЫВ О САЙТЕ</p>
+    <p class="modal__comment">Спасибо за посещение сайта компании VNGroup.<br>Мы стремимся к тому, чтобы наш сайт стал полезным инструментом для вашего бизнеса, и будем благодарны вам за предложения по улучшению работы сайта.</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ф.И.О.">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="email" class="form__input" placeholder="E-mail">
+      <textarea class="form__message" placeholder="Отзыв"></textarea>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
+      <label for="checkbox" class="form__label">Я не робот</label>
+      <button type="submit" class="btn form__btn">ОСТАВИТЬ ОТЗЫВ</button>
+      <p class="modal__comment">Согласен с <a href="#">политикой конфиденциальности</a></p>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
