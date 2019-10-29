@@ -20,11 +20,11 @@
         <div class="header__block">
           <a href="tel:+78005503513" class="phone header__phone">8 800 550 35 13</a>
         </div>
-        <div class="header__block">
+        <div class="header__block header__block--call">
           <a data-fancybox="" data-src="#call" href="javascript:;" class="call header__call">Заказать звонок</a>
           <a href="mailto:info@vngroup.su" class="mail header__mail">info@vngroup.su</a>
         </div>
-        <div class="header__block">
+        <div class="header__block header__block--call">
           <a href="#" class="header__login">Войти</a>
           <a href="#" class="header__reg">Регистрация</a>
         </div>
@@ -471,12 +471,12 @@
   <footer class="footer">
     <div class="wrapper">
       <div class="footer__wrap">
-        <div class="footer__block">
+        <div class="footer__block footer__block--logo">
           <div class="logo">
             <img src="img/images/VNGroup.png" alt="VNGroup">
           </div>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--menu">
           <p class="footer__title">Информация</p>
           <ul class="footer__menu">
             <li><a href="#">О компании</a></li>
@@ -490,14 +490,14 @@
             <li><a href="#">Карта сайта</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--contacts">
           <p class="footer__title">Размещение<br>запросов и заказов</p>
           <a href="tel:+78005503513" class="phone footer__phone">8 800 550 35 13</a>
           <a data-fancybox="" data-src="#call" href="javascript:;" class="call footer__call">Заказать звонок</a>
           <a href="mailto:info@vngroup.ru" class="mail footer__mail">info@vngroup.ru</a>
           <a href="#" class="social-link">Facebook</a>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--address">
           <p class="footer__title">Контакты</p>
           <address>119285, г. Москва<br>ул. Мосфильмовская 20/2</address>
           <address>Представительство в Приволжском ФО<br>443080, г. Самара<br>ул. Карла Маркса 192</address>
@@ -527,6 +527,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -552,6 +553,14 @@
       preventClicksPropagation: false,
       slidesPerView: 7,
       spaceBetween: 20,
+      breakpoints: {
+        1022: {
+          slidesPerView: 5,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+      }
     });
   </script>
   
