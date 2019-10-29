@@ -17,6 +17,8 @@
 }
 
 .nav__link {
+  position: relative;
+  padding-left: 30px;
   display: block;
   margin-bottom: 15px;
   font-weight: 700;
@@ -26,6 +28,33 @@
   &:active {
     color: @cyan;
     .transition();
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--01::before {
+    background-image: url(../img/icons/bed.png);
+  }
+  &--02::before {
+    background-image: url(../img/icons/oven.png);
+  }
+  &--03::before {
+    background-image: url(../img/icons/wine.png);
+  }
+  &--04::before {
+    background-image: url(../img/icons/suit.png);
+  }
+  &--05::before {
+    background-image: url(../img/icons/user.png);
   }
 }
 

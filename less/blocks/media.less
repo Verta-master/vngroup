@@ -81,6 +81,28 @@
   .catalog__list {
     margin-right: 0;
   }
+  .footer__menu,
+  .footer__block--address address,
+  .nav__sublist {
+    display: none;
+  }
+  .footer__block--menu .footer__title,
+  .footer__block--address .footer__title {
+    position: relative;
+    background-image: url(../img/icons/down-arrow-white.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: right 20px top;
+  }
+  .nav__link {
+    background-image: url(../img/icons/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: right 20px top;
+  }
+  .nav__link--05 {
+    background-image: none;
+  }
 }
 
 //--------------------------------------------------
@@ -88,7 +110,7 @@
   .header__wrap {
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .header__block {
     margin-left: 10px;
@@ -181,6 +203,7 @@
   .header__cart,
   .header__order,
   .header__block--call,
+  .header__block--reg,
   .nav__item,
   .subscribe__form,
   .subscribe__input,
@@ -203,9 +226,13 @@
   .nav__item {
     padding-right: 0;
   }
+  .header__block--reg,
   .header__block--call {
     margin-top: 10px;
     text-align: center;
+  }
+  .header__block--reg {
+    justify-content: center;
   }
   .header__wrap {
     padding-bottom: 10px;
@@ -216,5 +243,16 @@
     margin-right: auto;
     text-align: left;
   }
-  
+  .footer__block--address .footer__title,
+  .footer__block--menu .footer__title,
+  .nav__link {
+    background-position: top 3px right;
+  }
+  .footer__phone {
+    padding-left: 40px;
+    
+    &::before {
+      left: 0;
+    }
+  }
 }
