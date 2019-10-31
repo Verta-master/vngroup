@@ -41,6 +41,7 @@
   height: 200px;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding: 20px;
   border: 1px solid @grey;
   box-sizing: border-box;
   .transition();
@@ -63,8 +64,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
 }
 
 .tabs__next {
