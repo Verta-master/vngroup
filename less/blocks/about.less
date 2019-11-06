@@ -22,7 +22,17 @@
 }
 
 .about__btn {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto;
+  font-size: 13px;
+  background-color: #fff;
+  border-color: @grey;
+  
+  &:hover,
+  &:active {
+    color: red;
+    border-color: red;
+    .transition();
+  }
 }
